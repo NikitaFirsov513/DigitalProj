@@ -1,0 +1,74 @@
+@import "../../assets/style/index.scss";
+
+
+.main {
+    position: relative;
+    z-index: 3;
+    border-radius: 30px;
+    width: 100%;
+    min-height: 500px;
+    background-color: $textColorMainTwo;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    & a {
+        text-decoration: none;
+
+    }
+
+    &__brand {
+        width: 1600px;
+        display: flex;
+        justify-content: space-evenly;
+
+        &-element a{
+            width: 400px;
+            height: 100px;
+            font-family: "MontserratMedium";
+            color: $textColorMain;
+            text-decoration: none;
+            font-size: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__block {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    &__name {
+        height: 130px;
+        background-color: #f3f3f3;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-container {
+            width: 1600px;
+
+            & a {
+                font-size: 45px;
+                color: $mainColor;
+                display: flex;
+                align-items: center;
+                & svg {
+                    margin-left: 7px;
+                    height: 40px;
+                    width: auto;
+                }
+            }
+        }
+    }
+    &__elements {
+        display: flex;
+        margin-top: 50px;
+    }
+}

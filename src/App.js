@@ -1,57 +1,42 @@
 import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
-import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  Routes
+} from "react-router-dom";
+import MainPage from './pages/Main.jsx';
+
+import Header from './components/header/Header';
+import SearchPage from './pages/SearchPage.jsx';
+import Auth from './components/auth/Auth.jsx';
+import ProductPage from './pages/ProductPage.jsx';
+import BasketPage from './pages/BasketPage.jsx';
+import ComparePage from './pages/ComparePage.jsx';
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
-      </header>
-    </div>
+
+    <>
+
+      <Header />
+      <Auth />
+      <Routes>
+
+        <Route exact path="/" element={<MainPage />} />
+        <Route exact path="/search/:page/:query" element={<SearchPage />} />
+        <Route exact path="/product" element={<ProductPage />} />
+        <Route exact path="/basket" element={<BasketPage />} />
+        <Route exact path="/compare" element={<ComparePage />} />
+
+      </Routes>
+
+
+    </>
   );
 }
 

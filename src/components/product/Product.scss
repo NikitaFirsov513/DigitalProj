@@ -1,0 +1,223 @@
+@import "../../assets/style/index.scss";
+
+.product {
+    position: relative;
+    z-index: 3;
+    border-radius: 30px;
+    width: 100%;
+    min-height: 1500px;
+    background-color: $textColorMainTwo;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &__contaiter {
+        width: 1600px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__head {
+        margin: 33px 0 0 44px;
+
+        & p {
+            font-size: 30px;
+            font-weight: 700;
+        }
+        &-buttons {
+            margin-top: 15px;
+            display: flex;
+            gap: 10px;
+
+            &-element {
+                color: #ffffff;
+                padding: 10px 14px 10px 14px;
+                cursor: pointer;
+                background-color: #1e8cb0;
+                border: none;
+                outline: none;
+                border-radius: 14px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 20px;
+                &--active {
+                    background-color: #efa500;
+                }
+            }
+        }
+    }
+
+    &__inform {
+        margin: 40px 30px 0 115px;
+        display: flex;
+    }
+
+    &__image-list {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+    }
+
+    &__image-main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 400px;
+        height: 440px;
+
+        & img {
+            max-height: 440px;
+            max-width: 400px;
+        }
+    }
+    &__image-sub {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & button {
+            cursor: pointer;
+            border: none;
+            outline: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ffffff;
+        }
+    }
+    &__image-sub-container {
+        overflow: hidden;
+        width: 350px;
+    }
+    &__image-sub-list {
+        margin-left: 0px;
+        display: flex;
+        gap: 7px;
+        height: 80px;
+        &-element {
+            width: 60px;
+            cursor: pointer;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 2px;
+            & img {
+                max-height: 70px;
+                max-width: 60px;
+                width: auto;
+            }
+            &--active {
+                border-bottom: #151a40 4px solid;
+            }
+        }
+    }
+
+    &__inform-main {
+        display: flex;
+        flex-direction: column;
+    }
+    &__inform-prop-buy {
+        display: flex;
+        width: 1030px;
+        justify-content: space-between;
+    }
+    &__inform-prop {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        & div p {
+            color: #2a2a2a;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        &-element-link {
+            margin-top: 15px;
+
+            & a {
+                margin-right: 10px;
+                border-radius: 7px;
+                text-decoration: none;
+                color: #ffffff;
+                background-color: #1e8cb0;
+                padding: 10px 14px;
+            }
+            &--active {
+                background-color: #efa500 !important;
+            }
+        }
+    }
+
+    &__inform-colors {
+        &-list {
+            height: 25px;
+            display: flex;
+            gap: 5px;
+            margin-top: 5px;
+            align-items: center;
+
+            & a {
+                padding: 12px;
+                border-radius: 4px;
+                background-color: #151a40;
+            }
+        }
+    }
+
+    &__inform-property {
+        &-list {
+            margin-top: 5px;
+            width: 250px;
+            &-elem {
+                margin-top: 5px;
+                display: flex;
+                justify-content: space-between;
+                & :first-child {
+                    color: #5f5f65;
+                    font-size: 16px;
+                    font-weight: normal;
+                }
+                & :last-child {
+                    color: #000000;
+                    font-size: 16px;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+
+    &__inform-buy {
+        margin-right: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        gap: 10px;
+        & h1 {
+            text-align: right;
+            margin: 0;
+            font-size: 40px;
+            color: $twoColor;
+        }
+        & button {
+            cursor: pointer;
+            border: none;
+            outline: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $mainColor;
+            color: #ffffff;
+            font-size: 27px;
+            padding: 15px 40px 15px 40px;
+            border-radius: 14px;
+        }
+        &--active {
+            & button {
+                background-color: $twoColor;
+            }
+        }
+    }
+}

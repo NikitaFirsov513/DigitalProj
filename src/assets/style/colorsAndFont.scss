@@ -1,0 +1,26 @@
+$mainColor: #151a40;
+$twoColor: #efa500;
+$backColor: #f3f3f3;
+$textColorMain: #2a2a2a;
+$textColorMainTwo: #ffffff;
+$textColorTwo: #bebec9;
+
+
+ 
+@font-face {
+    font-family: "LatoRegular";
+    src: url("../font/Lato/latoblack.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "GothamPro";
+    src: url("../font/Gothampro-master/GothamPro/GothamPro.ttf") format("truetype");
+}
+@font-face {
+    font-family: "GothamProMedium";
+    src: url("../font/Gothampro-master/GothamPro-Medium/GothamPro-Medium.ttf") format("truetype");
+}
+@font-face {
+    font-family: "MontserratMedium";
+    src: url("../font/Moncerat/Montserrat-Medium.ttf") format("truetype");
+}

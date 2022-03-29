@@ -1,0 +1,97 @@
+@import "../../assets/style/index.scss";
+
+.header {
+    width: 100%;
+    background-color: $mainColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__container {
+        width: 1600px;
+    }
+    &__top {
+        height: 110px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__menu {
+        cursor: pointer;
+        & svg{
+            height: 30px;
+            width: auto;
+        }
+    }
+
+    &__logo {
+        text-decoration: none;
+        user-select: none; 
+        & p {
+            font-size: 35px;
+            color: $textColorMainTwo;
+        }
+    }
+
+    &__search {
+        width: 850px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #8a8da0;
+        border-radius: 7px;
+
+        & svg {
+            color: $textColorTwo;
+        }
+        & input {
+            color: $textColorMainTwo;
+            border: 0;
+            width: 790px;
+            height: 100%;
+            background-color: #8a8da0;
+        }
+        & input:focus {
+            outline: none;
+        }
+    }
+
+    &__elem {
+        & a {
+            display: flex;
+
+            text-decoration: none;
+            color: $textColorMainTwo;
+
+            & p {
+                font-size: 20px;
+            }
+        }
+    }
+    &__bottom {
+        position: absolute;
+        z-index: 0;
+        & nav ul {
+            display: flex;
+            column-gap: 30px;
+            & li {
+                list-style-type: none;
+                & a {
+                    text-decoration: none;
+                    color: $textColorMainTwo;
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+    &__anim {
+        width: 100%;
+        transition: all 0.5s;
+        background-color: aqua;
+    }
+    &__anim--a {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}
